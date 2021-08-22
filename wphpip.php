@@ -5,8 +5,8 @@ Plugin URI:        https://herbrand.org/wordpress/eigene-plugins/wp-h-posts-in-p
 Description:       Beitr&auml;ge in Seiten einf&uuml;gen
 Author:            Hans M. Herbrand
 Author URI:        https://herbrand.org
-Version:           1.1
-Date:              2021-05-27
+Version:           1.1.2
+Date:              2021-08-22
 License:           GNU General Public License v2 or later
 License URI:       http://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/m266/wp-h-posts-in-pages
@@ -41,7 +41,7 @@ function shortcode_posts_function(){
     //Inhalte sammeln
     $content = '<div class="posts">';
     $content .= '<hr>
-    <h1 class="page-title">Letzte &Auml;nderungen:</h1>';
+    <h3 class="page-title">Letzte &Auml;nderungen:</h3>';
     foreach ($posts as $post) {
         $content .= '<div class="post">';
         $content .= '<b><a href="'.get_permalink($post->ID).'"><div class="title">'.$post->post_title.'</div></b></a>';
